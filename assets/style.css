@@ -6,6 +6,10 @@ body {
   line-height: 1.6;
 }
 
+* {
+  font-family: inherit;
+}
+
 a {
   color: #9ad1ff;
   text-decoration: none;
