@@ -1,45 +1,66 @@
+:root { color-scheme: light dark; }
+
 body {
-  background-color: #0f0f0f;
-  color: #eaeaea;
-  margin: 0;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 28px 18px;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.65;
+
+  /* Dark look (force it) */
+  background: #0f0f0f;
+  color: #eaeaea;
 }
 
-* {
-  font-family: inherit;
+nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  opacity: 0.92;
+  margin-bottom: 14px;
 }
 
-a {
-  color: #9ad1ff;
+nav a {
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+  color: inherit;
 }
 
-a:hover {
-  text-decoration: underline;
+nav a:hover { border-bottom-color: currentColor; }
+
+h1 { line-height: 1.2; margin: 10px 0 8px; }
+h2 { margin-top: 26px; }
+
+hr { margin: 22px 0; opacity: 0.35; border: none; border-top: 1px solid currentColor; }
+
+.meta {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin: 0;
 }
 
-h1, h2, h3 {
-  color: #ffffff;
-  font-weight: normal;
+blockquote {
+  margin: 14px 0;
+  padding: 10px 14px;
+  border-left: 3px solid currentColor;
+  opacity: 0.95;
 }
 
-hr {
-  border: none;
-  border-top: 1px solid #333;
-  margin: 3rem 0;
+footer {
+  margin-top: 28px;
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
-.email-header {
-  color: #bbbbbb;
-  font-size: 0.95em;
+footer a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  color: inherit;
 }
 
-.note {
-  color: #aaaaaa;
-  font-style: italic;
-}
+footer a:hover { border-bottom-color: currentColor; }
 
-p {
-  margin-bottom: 1.2em;
-}
+/* Email helpers (optional, but nice) */
+.email-header { font-size: 0.95rem; opacity: 0.85; }
+.note { font-size: 0.95rem; opacity: 0.85; font-style: italic; }
