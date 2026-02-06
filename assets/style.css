@@ -61,6 +61,27 @@ footer a {
 
 footer a:hover { border-bottom-color: currentColor; }
 
+h1, h2, h3 {
+  color: #ffffff !important;
+}
+
+.note,
+.meta,
+.email-header {
+  color: #cfcfcf !important;
+}
+
+a {
+  color: #9ad1ff !important;
+}
+
+/* FORCE TEXT COLOR CONSISTENCY */
+body,
+body * {
+  color: #eaeaea !important;
+}
+
+
 /* Email helpers (optional, but nice) */
 .email-header { font-size: 0.95rem; opacity: 0.85; }
 .note { font-size: 0.95rem; opacity: 0.85; font-style: italic; }
