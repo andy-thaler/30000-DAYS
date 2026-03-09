@@ -43,6 +43,19 @@
       font-size: 0.95rem;
       color: #555;
     }
+
+    .chapter-nav {
+      margin: 3rem 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .chapter-nav a {
+      text-decoration: none;
+    }
   </style>
 </head>
 
@@ -135,6 +148,32 @@
   <p>
     Porque en medio del caos del mundo, por un instante, solo existimos nosotros dos.
   </p>
+
+  <nav class="chapter-nav" aria-label="Navegación de capítulo">
+    <a id="nav-prev" href="#">← Anterior</a>
+    <a id="nav-home" href="/30000-DAYS/es/">Inicio</a>
+    <a id="nav-next" href="#">Siguiente →</a>
+  </nav>
+
+  <script>
+    const chapterNav = {
+      prev: "/30000-DAYS/es/capitulos/la-voz-que-me-precede-email-4/",
+      home: "/30000-DAYS/es/",
+      next: ""
+    };
+
+    document.getElementById("nav-prev").href = chapterNav.prev || "#";
+    document.getElementById("nav-home").href = chapterNav.home || "/30000-DAYS/es/";
+    document.getElementById("nav-next").href = chapterNav.next || "#";
+
+    if (!chapterNav.prev) {
+      document.getElementById("nav-prev").style.visibility = "hidden";
+    }
+
+    if (!chapterNav.next) {
+      document.getElementById("nav-next").style.visibility = "hidden";
+    }
+  </script>
 
 </body>
 </html>
