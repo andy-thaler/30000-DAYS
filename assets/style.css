@@ -114,6 +114,27 @@ body * {
   text-decoration: underline;
 }
 
+/* ============================= */
+/* Chapter List */
+/* ============================= */
+
+.chapter-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.chapter-list li {
+  margin: 0 0 1rem;
+}
+
+.chapter-list a {
+  text-decoration: none;
+}
+
+.chapter-list a:hover {
+  text-decoration: underline;
+}
 
 /* Email helpers (optional, but nice) */
 .email-header { font-size: 0.95rem; opacity: 0.85; }
