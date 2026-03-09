@@ -111,5 +111,31 @@
     En pocos días salimos para Bogotá.
   </p>
 
+  <nav class="chapter-nav" aria-label="Navegación de capítulo">
+    <a id="nav-prev" href="#">← Anterior</a>
+    <a id="nav-home" href="/30000-DAYS/es/">Inicio</a>
+    <a id="nav-next" href="#">Siguiente →</a>
+  </nav>
+
+  <script>
+    const chapterNav = {
+      prev: "/30000-DAYS/es/capitulos/la-voz-que-me-precede-email-3/",
+      home: "/30000-DAYS/es/",
+      next: "/30000-DAYS/es/capitulos/reencuentro-despues-de-mas-de-quince-años/"
+    };
+
+    document.getElementById("nav-prev").href = chapterNav.prev || "#";
+    document.getElementById("nav-home").href = chapterNav.home || "/30000-DAYS/es/";
+    document.getElementById("nav-next").href = chapterNav.next || "#";
+
+    if (!chapterNav.prev) {
+      document.getElementById("nav-prev").style.visibility = "hidden";
+    }
+
+    if (!chapterNav.next) {
+      document.getElementById("nav-next").style.visibility = "hidden";
+    }
+  </script>
+
 </body>
 </html>
